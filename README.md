@@ -24,10 +24,10 @@ The following supplies were used:
  - A <a href="https://www.amazon.com/dp/B07QNN2GRV">flow meter</a> (Digiten)
  - Three <a href="https://www.digikey.com/en/products/detail/nxp-usa-inc./MPVZ5004GW7U/1168374">pressure sensors (MPVZ5004GW7U)</a>
  - 10 ft of <a href="https://www.mcmaster.com/5233K72/">1 inch I.D. PVC tubing</a>
- - Small tubing for air
+ - 10 ft of <a href="https://www.mcmaster.com/5233K404/">1/8th inch tubing</a> for air
  - Larger tubing, for air and water pressure connections
  - A custom PCB from JCLPCB
- - A 12 volt power supply and its wire adapter
+ - A <a href="https://www.amazon.com/dp/B0852HX9HV/">12 volt power supply and its wire adapter</a>
  - TPU sheets for pockets
  - JB weld adhesive
  - PVC adhesive (maybe not necessary?)
@@ -35,8 +35,10 @@ The following supplies were used:
  - USB-c converter for RPi for camera (maybe not necessary?)
  - Tubing fittings
    - Small T tubing fittings
+   - Small tube fittings for solenoid valve
    - Large T tubing fittings
    - Large 90deg tubing fitings
+   - Large tube fitting for pressure sensors
  - A jar for the compliance chamber
 
 While testing the system, the following was used:
