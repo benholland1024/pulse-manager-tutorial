@@ -102,7 +102,7 @@ The heart structure requirements:
  - It should have a volume that approximates the volume of the left ventricle at diastole (~100mL). The volume of a cone was used to roughly estimate this.
 
 The flexible heart Solidworks file is available for download [here](https://github.com/benholland1024/pulse-manager-tutorial/blob/main/heartStruct25mm.SLDPRT) and the STL [here](https://github.com/benholland1024/pulse-manager-tutorial/blob/main/assets/cardiovascular-model/heartStruct25mm.STL). The steps to create the model in Solidworks are:
- 1. Sketch a cross section of half the heart structure wall (excluding the openings) with the desired volume.
+ 1. Sketch a cross section of half the heart structure wall (excluding the openings) with the desired volume. <img src="https://github.com/benholland1024/pulse-manager-tutorial/blob/main/assets/cardiovascular-model/images/HeartStruct_step1_sketch.png?raw=true" width="150px">
  2. Use the "revolve boss/base" tool around the y axis.
  3. Create a new reference plane from the "Top" plane, near where the holes will be made.
  4. Create another reference plane rotated about 30deg, which will be the angle of the holes.
@@ -114,6 +114,8 @@ The flexible heart Solidworks file is available for download [here](https://gith
  10. Revolve the barb around the center line to create one barb.
  11. Use linear pattern to create 3 more barbs, evenly spaced.
  12. Repeat steps 4-11 to create a second hole (or use the "mirror pattern" tool).
+
+
 
 Save this file as a .STL, and import it into the AnyCubic Slicer software. 
 
