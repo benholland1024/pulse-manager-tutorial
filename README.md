@@ -94,7 +94,7 @@ The heart structure must have the following traits:
  - Optionally, it may have a smaller opening to accomodate the endoscopic camera. This also must be watertight when the camera is inserted. 
  - It should have a volume that approximates the volume of the left ventricle at diastole (~100mL). The volume of a cone was used to roughly estimate this.
 
-The flexible heart structure was modeled in Solidworks. The model is available [here](). The steps to create the model were:
+The flexible heart structure was modeled in Solidworks. The model is available for download [here](https://github.com/benholland1024/pulse-manager-tutorial/blob/main/heartStruct25mm.SLDPRT). The steps to create the model were:
  1. Sketch a cross section of half the heart structure wall (excluding the openings) with the desired volume.
  2. Use the "revolve boss/base" tool around the y axis.
  3. Create a new reference plane from the "Top" plane, near where the holes will be made.
