@@ -108,6 +108,16 @@ The flexible heart structure was modeled in Solidworks. The model is available f
  11. Use linear pattern to create 3 more barbs, evenly spaced.
  12. Repeat steps 4-11 to create a second hole (or use the "mirror pattern" tool).
 
+Save this file as a .STL, and import it into the AnyCubic Slicer software. 
+
+Position it in the center of the print bed, on its side, with the holes facing the top and bottom. This minimizes the risk of suction cupping. 
+
+Add supports using the "support only on platform" button. 
+
+Click the "slice" button. Save the slice file to a flash drive to generate a .pm5 slice file. 
+
+Plug the flash drive into the 
+
 
 
 <h3 id="compliance-chamber"> 2.2. Assemble compliance chamber</h3>
