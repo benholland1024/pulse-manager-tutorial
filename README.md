@@ -8,17 +8,17 @@
 
  1. <a href="#supplies">**Required tools and supplies**</a>
  2. **The cardiovascular model**
-    2.1. Print the heart + case
-    2.2. Assemble compliance chamber
-    2.3. Assemble tubing and sensors
+    - 2.1. Print the heart + case
+    - 2.2. Assemble compliance chamber
+    - 2.3. Assemble tubing and sensors
  3. **The air pump**
-    3.1. Create inflatable pockets
-    3.2. Attach tubing to valves and air source
+    - 3.1. Create inflatable pockets
+    - 3.2. Attach tubing to valves and air source
  4. **The Raspberry Pi controller**
-    4.1. Print case for RPi screen
-    - Set up RPi with a keyboard and mouse
-    - Circuitry
-    - Set up the pulse-manager software
+    - 4.1. Print case for RPi screen
+    - 4.2. Set up RPi with a keyboard and mouse
+    - 4.3. Circuitry
+    - 4.4. Set up the pulse-manager software
  5. **Testing**
 
 <br/><hr/><br/>
@@ -87,5 +87,41 @@ While testing the system, the following was used:
 
 <h2 id="supplies">2. The cardiovascular model</h2>
 <h3 id="print-the-heart"> 2.1. Print the heart + case</h3>
+
+The heart structure must have the following traits:
+ - It should be flexible, so it can be compressed to simulate systole.
+ - It should have two openings, which can make watertight connections with the tubing. Barbs were used for this. Our tubing was 1.25" in O.D.
+ - Optionally, it may have a smaller opening to accomodate the endoscopic camera. This also must be watertight when the camera is inserted. 
+ - It should have a volume that approximates the volume of the left ventricle at diastole (~100mL). The volume of a cone was used to roughly estimate this.
+
+The flexible heart structure was modeled in Solidworks. The model is available [here](). The steps to create the model were:
+ 1. Sketch a cross section of half the heart structure wall (excluding the openings) with the desired volume.
+ 2. Use the "revolve boss/base" tool around the y axis.
+ 3. Create a new reference plane from the "Top" plane, near where the holes will be made.
+ 4. Create another reference plane rotated about 30deg, which will be the angle of the holes.
+ 5. Sketch the outer diameter of the holes, I used 37.55mm. Extrude boss/base that sketch so it sticks out about 20mm.
+ 6. Sketch the inner diamter of the holes, 32.25mm (.5mm bigger than 1.25"). Make an extruded cut to create the holes.
+ 7. Create a plane perpendicular to the one last created.
+ 8. Switch the view to "hidden lines visible" and sketch a cross section of one of the barbs, which should be 0.5mm by 4mm.
+ 9. Create a different sketch on the same plane, and draw a line through the center of the cylinder.
+ 10. Revolve the barb around the center line to create one barb.
+ 11. Use linear pattern to create 3 more barbs, evenly spaced.
+ 12. Repeat steps 4-11 to create a second hole (or use the "mirror pattern" tool).
+
+
+
 <h3 id="compliance-chamber"> 2.2. Assemble compliance chamber</h3>
 <h3 id="tubing-and-sensors"> 2.3. Assemble tubing and sensors</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
