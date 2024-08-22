@@ -133,7 +133,7 @@ The Solidworks files for the heart casing halves are available [here](). They we
  - Optionally, they have holes for the endoscopic camera. 
  - Optionally, they have snap-fit joints to adhere the two halves. I couldn't get these to work, and used zip ties instead. 
 
-Export these files, add supports in the slicer, and save it. Print these with 
+Export these files, add supports in the slicer, and save it. Print these with <a href="https://store.anycubic.com/products/high-speed-resin?srsltid=AfmBOooOMM5i6VAxBmYBslaz3VqEcGTLrc5fxPaAbTTxGhNPXFPJ3_7-">Anycubic high speed resin</a>
 
 
 
