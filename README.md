@@ -7,10 +7,11 @@
 <h2>Contents</h2>
 
  1. <a href="#supplies">**Required tools and supplies**</a>
- 2. **The cardiovascular model**
-    - 2.1. Print the heart + case
-    - 2.2. Assemble compliance chamber
-    - 2.3. Assemble tubing and sensors
+ 2. <a href="#cardiovascular-model">**The cardiovascular model**</a>
+    - 2.1. Print the heart
+    - 2.2. Print the heart casing
+    - 2.3. Assemble compliance chamber
+    - 2.4. Assemble tubing and sensors
  3. **The air pump**
     - 3.1. Create inflatable pockets
     - 3.2. Attach tubing to valves and air source
@@ -85,7 +86,7 @@ While testing the system, the following was used:
 
 <br/><hr/><br/>
 
-<h2 id="supplies">2. The cardiovascular model</h2>
+<h2 id="cardiovascular-model">2. The cardiovascular model</h2>
 <h3 id="print-the-heart"> 2.1. Print the heart</h3>
 
 The heart structure must have the following traits:
@@ -117,7 +118,7 @@ Add supports using the "support only on platform" button.
 Click the "slice" button. Save the slice file to a flash drive to generate a .pm5 slice file. Print the model with <a href="https://www.amazon.com/dp/B08RWMMVCH">Superflex 80A printing resin</a>.
 
 
-<h3 id="print-the-case"> 2.1. Print the heart case</h3>
+<h3 id="print-the-casing"> 2.1. Print the heart casing</h3>
 
 The heart structure casing needs the following traits:
  - It should fit around the shape of the heart structure, with space for the uninflated inflatable pockets.
@@ -137,8 +138,8 @@ Export these files, add supports in the slicer, and save it. Print these with <a
 
 
 
-<h3 id="compliance-chamber"> 2.2. Assemble compliance chamber</h3>
-<h3 id="tubing-and-sensors"> 2.3. Assemble tubing and sensors</h3>
+<h3 id="compliance-chamber"> 2.3. Assemble compliance chamber</h3>
+<h3 id="tubing-and-sensors"> 2.4. Assemble tubing and sensors</h3>
 
 
 
