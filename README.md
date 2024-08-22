@@ -2,34 +2,35 @@
 
 <h4 align="center">A description of how to recreate the hardware needed to use the <a href="https://github.com/benholland1024/pulse-manager">pulse-manager</a> software.</h4>
 
-<hr/>
+<br/><hr/><br/>
 
 <h2>Contents</h2>
 
- 1. Required tools and supplies
- 2. The cardiovascular model
-    - Print the heart + case
-    - Assemble compliance chamber
-    - Assemble tubing and sensors
- 3. The air pump
-    - Create inflatable pockets
-    - Attach tubing to valves and air source
- 4. The Raspberry Pi controller
-    - Print case for RPi screen
+ 1. <a href="#supplies">**Required tools and supplies**</a>
+ 2. **The cardiovascular model**
+    2.1. Print the heart + case
+    2.2. Assemble compliance chamber
+    2.3. Assemble tubing and sensors
+ 3. **The air pump**
+    3.1. Create inflatable pockets
+    3.2. Attach tubing to valves and air source
+ 4. **The Raspberry Pi controller**
+    4.1. Print case for RPi screen
     - Set up RPi with a keyboard and mouse
     - Circuitry
     - Set up the pulse-manager software
- 5. Testing
+ 5. **Testing**
 
-<hr/>
+<br/><hr/><br/>
 
-<h2>Required tools and supplies</h2>
+<h2 id="supplies">1. Required tools and supplies</h2>
 
 The following tools were used:
- - <a href="https://store.anycubic.com/products/photon-mono-m5s?srsltid=AfmBOoo6R4wCbVnCGKRZ7tQgiQt0xwVnhSDFUFg9_NGr83IOjvOBaMKt">Anycubic Photon Mono M5s</a>
- - <a href="https://www.solidworks.com/">SolidWorks software</a>, provided by the University of Akron, running on a Windows computer.
- - <a href="https://www.amazon.com/dp/B0067FFW6E">Dental vacuum former</a>
- - <a href="https://www.amazon.com/dp/B075L6K1KM">Heat press</a>
+ - An <a href="https://store.anycubic.com/products/photon-mono-m5s?srsltid=AfmBOoo6R4wCbVnCGKRZ7tQgiQt0xwVnhSDFUFg9_NGr83IOjvOBaMKt">Anycubic Photon Mono M5s</a> 3d printer, and the slicer software
+ - The <a href="https://www.solidworks.com/">SolidWorks software</a>, provided by the University of Akron, running on a Windows computer
+ - A <a href="https://www.amazon.com/dp/B0067FFW6E">dental vacuum former</a>
+ - A <a href="https://www.amazon.com/dp/B075L6K1KM">heat press</a>
+ - A <a href="https://www.amazon.com/dp/B07RZV2DW8">soldering iron</a>
 
 The following supplies were used:
  - Resins:
@@ -50,6 +51,7 @@ The following supplies were used:
    - A <a href="https://www.amazon.com/dp/B0852HX9HV/">12 volt power supply and its wire adapter</a>
    - A <a href="https://www.amazon.com/dp/B00GFAN498">Wifi USB dongle</a>for the Raspberry Pi
    - USB-c converter for RPi for camera (maybe not necessary?)
+   - Some <a href="https://www.amazon.com/dp/B01N0VNNKO">solder</a>
  - Tubing:
    - 10 ft of <a href="https://www.mcmaster.com/5233K72/">1 inch I.D. PVC tubing</a>
    - 10 ft of <a href="https://www.mcmaster.com/5233K56/">1/4 inch I.D. PVC tubing</a>
@@ -78,4 +80,12 @@ While testing the system, the following was used:
  - Bread boards
  - Pin wires
  - LEDs
-<h2></h2>
+ - A multimeter
+
+
+<br/><hr/><br/>
+
+<h2 id="supplies">2. The cardiovascular model</h2>
+<h3 id="print-the-heart"> 2.1. Print the heart + case</h3>
+<h3 id="compliance-chamber"> 2.2. Assemble compliance chamber</h3>
+<h3 id="tubing-and-sensors"> 2.3. Assemble tubing and sensors</h3>
