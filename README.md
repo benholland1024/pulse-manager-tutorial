@@ -86,7 +86,7 @@ While testing the system, the following was used:
 <br/><hr/><br/>
 
 <h2 id="supplies">2. The cardiovascular model</h2>
-<h3 id="print-the-heart"> 2.1. Print the heart + case</h3>
+<h3 id="print-the-heart"> 2.1. Print the heart</h3>
 
 The heart structure must have the following traits:
  - It should be flexible, so it can be compressed to simulate systole.
@@ -114,11 +114,26 @@ Position it in the center of the print bed, on its side, with the holes facing t
 
 Add supports using the "support only on platform" button. 
 
-Click the "slice" button. Save the slice file to a flash drive to generate a .pm5 slice file. 
-
-Print the model with <a href="https://www.amazon.com/dp/B08RWMMVCH">Superflex 80A printing resin</a>.
+Click the "slice" button. Save the slice file to a flash drive to generate a .pm5 slice file. Print the model with <a href="https://www.amazon.com/dp/B08RWMMVCH">Superflex 80A printing resin</a>.
 
 
+<h3 id="print-the-case"> 2.1. Print the heart case</h3>
+
+The heart structure casing needs the following traits:
+ - It should fit around the shape of the heart structure, with space for the uninflated inflatable pockets.
+ - It should be rigid, so that the inflatable pockets inflate inward, squeezing the heart
+ - It should have holes for the tubing of the inflatable pockets.
+ - Optionally, it may have a hole for the endoscopic camera.
+ - It should be printed in two halves which can be adhered together around the heart.
+
+The Solidworks files for the heart casing halves are available [here](). They were made using similar methods to the heart structure model. The differences are:
+ - The case halves are larger, which affects the first sketch and the sizes of the holes.
+ - The case halves are halved, of course. This can be done by only rotating the initial sketch 180deg. 
+ - They have holes for the inflatable pockets, made via vertical extruded cuts, repeated via the radial pattern tool. 
+ - Optionally, they have holes for the endoscopic camera. 
+ - Optionally, they have snap-fit joints to adhere the two halves. I couldn't get these to work, and used zip ties instead. 
+
+Export these files, add supports in the slicer, and save it. Print these with 
 
 
 
