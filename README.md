@@ -12,15 +12,15 @@
     - 2.2. Print the heart casing
     - 2.3. Assemble compliance chamber
     - 2.4. Assemble tubing and sensors
- 3. **The air pump**
+ 3. [**The air pump**](#air-pump)
     - 3.1. Create inflatable pockets
     - 3.2. Attach tubing to valves and air source
- 4. **The Raspberry Pi controller**
+ 4. [**The Raspberry Pi controller**](#rpi)
     - 4.1. Print case for RPi screen
     - 4.2. Set up RPi with a keyboard and mouse
     - 4.3. Circuitry
     - 4.4. Set up the pulse-manager software
- 5. **Testing**
+ 5. [**Testing**](#testing)
 
 <br/><hr/><br/>
 
@@ -195,11 +195,19 @@ The tubing assembly requirements:
 
 <br/><hr/><br/>
 
-<h2 id="cardiovascular-model">2. The cardiovascular model</h2>
+<h2 id="air-pump">2. The air pump</h2>
 
 
+<br/><hr/><br/>
+
+<h2 id="rpi">4. The Raspberry Pi controller</h2>
+
+<br/><hr/><br/>
+
+<h2 id="testing">2. Testing</h2>
 
 
+<br/><br/><br/><br/>
 
 
 
