@@ -115,8 +115,6 @@ The flexible heart Solidworks file is available for download [here](https://gith
  11. Use linear pattern to create 3 more barbs, evenly spaced.
  12. Repeat steps 4-11 to create a second hole (or use the "mirror pattern" tool).
 
-
-
 Save this file as a .STL, and import it into the AnyCubic Slicer software. 
 
 Position it in the center of the print bed, on its side, with the holes facing the top and bottom. This minimizes the risk of suction cupping. 
@@ -135,6 +133,11 @@ The heart structure casing requirements:
  - It should have holes for the tubing of the inflatable pockets.
  - Optionally, it may have a hole for the endoscopic camera.
  - It should be printed in two halves which can be adhered together around the heart.
+
+Below is a picture of the heart structure in the heart casing, with the inflatable pockets, to make the goal more clear. The heart casing halves are the blue solid structures:
+
+<img src="https://github.com/user-attachments/assets/43e9324f-ac47-42d2-9388-1d2985f69682" width="150px">
+
 
 The Solidworks and STL files for the heart casing halves are available here: 
 [half1.sldprt](https://github.com/benholland1024/pulse-manager-tutorial/blob/main/assets/cardiovascular-model/PocketFrameHalf1.SLDPRT),
@@ -171,7 +174,12 @@ Use the 220 grit sandpaper to smooth the jar around both holes, where the connec
 
 Using gloves, a disposable dish, and a popsicle stick (or some disposable brush), mix the [JB Weld Steel Adhesive](https://www.amazon.com/dp/B0006O1ICE) properly and paint a semi-thick coat evenly on the connectors, where they'll meet the jar. 
 
-Balance the jar on one of the connectors, and place something heavy on the other connector, to let the adhesive cure. Leave the compliance chamber like this for 24 hours. Then, check to make sure the chamber is waterproof. 
+Balance the jar on one of the connectors, and place something heavy on the other connector, to let the adhesive cure. Below is a picture of the compliance chamber curing. 
+
+<img src="https://github.com/user-attachments/assets/1b4718a3-4490-4195-ad99-3645737ce645" width="150px">
+
+
+Leave the compliance chamber like this for 24 hours. Then, check to make sure the chamber is waterproof. 
 
 <br/>
 
