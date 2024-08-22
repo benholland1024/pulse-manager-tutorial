@@ -116,7 +116,9 @@ Add supports using the "support only on platform" button.
 
 Click the "slice" button. Save the slice file to a flash drive to generate a .pm5 slice file. 
 
-Plug the flash drive into the 
+Print the model with <a href="https://www.amazon.com/dp/B08RWMMVCH">Superflex 80A printing resin</a>.
+
+
 
 
 
