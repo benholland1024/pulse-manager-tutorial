@@ -332,11 +332,20 @@ _(I know this set up is a pain but you only have to do it once, and Geany is pre
 
 In the bottom panel of Geany, click the down arrow until it says "terminal".  Type "pwd" to make sure you're in the `pulse-duplicator` project folder. (Navigate there using `cd` if not). 
 
-Now, you should be able to run the app using:
+Now, you should be able to run the app! Try this: 
 
 ```bash
 python app.py
 ```
+
+If you get an [error about edge detection](), you may need to run these two commands:
+```bash
+sudo apt remove python3-rpi.gpio
+sudo apt install python3-rpi-lgpio
+```
+Then try `python app.py` again. 
+
+If the window opens but says "Error: 404", open `app.py` and ensure the line which includes `eel.init(os.path.abspath` has the correct file path for the project. 
 
 <br/>
 
