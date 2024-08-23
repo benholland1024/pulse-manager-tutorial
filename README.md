@@ -75,7 +75,7 @@ The following supplies were used:
    - 1 1 inch to 1 inch thread adapter (like <a href="https://www.amazon.com/dp/B0BQGJCCRP">this</a> but with 1" on both ends - I found it at home depot).
      - This is optional! Used with a <a href="https://www.amazon.com/Spears-PVC-THREADED-CAPS-1in/dp/B000VYJ4UC">1 inch plastic pvc cap</a> to make a removable entrance.
  - Inflatable pocket material
-   - <a href="https://www.americanpolyfilm.com/polyether-tpu-film">TPU sheets</a>
+   - 80A shore polyether film, 0.012 inches in thickness from <a href="https://www.americanpolyfilm.com/polyether-tpu-film">American Polyfilm</a>
    - <a href="https://www.amazon.com/dp/">PVC adhesive</a> (maybe not necessary?)
  - Compliance chamber materials:
    - <a href="https://www.amazon.com/dp/B0006O1ICE">JB weld steel adhesive</a>
@@ -208,6 +208,48 @@ The complete set up uses 1" I.D. tubing, 90 degree connectors, T connectors, 3d 
 <h2 id="air-pump">3. The air pump</h2>
 
 <h3 id="inflatable-pockets"> 3.1. Create inflatable pockets</h3>
+
+The infatable pocket requirements:
+ - These must be hollow, inflatable, and airtight.
+ - These must be in a shape compatible with the heart structure.
+ - These must have tubes connected to them, for inflation.
+
+The idea for inflatable pockets was taken directly from [this paper](https://www.science.org/doi/full/10.1126/scirobotics.ade2184) by Goswami. 
+
+First, two negative mold halves must be modeled and printed. Here are some general steps for modeling these in Solidworks:
+ 1. Start by modeling the pocket shape.
+    - The pocket should wrap 80 degrees around the heart structure, and the inner face should press the structure inward. Reference pictures can be found in Dr. Goswami's paper.
+    - Sketch a cross section of the pocket and revolve boss/base it 80 degrees.
+    - This file is available here: [inflatable_pockets.sldprt](https://github.com/benholland1024/pulse-manager-tutorial/blob/main/assets/air-pump/inflatable_pockets.SLDPRT). There's no need to print this.
+ 2. Create a new assembly from the inflatable pocket model.
+ 3. In that assembly, create two new parts, both rectangular prisms. These will be the mold halves, and should be of dimensions that cover the inflatable pocket model.
+    - Use mates to push the two halves together, and position them on top of the pocket model.
+    - Edit one of the halves in the assembly (right click on it, click "edit part").
+    - On the top bar, click "Insert → Features → Cavity". Click the intersecting pocket part. Adjust the parts if needed.
+    - Repeat this procedure on the second half.
+ 4. Save the two negative parts. You can find these files here:
+[negative1.sldprt](https://github.com/benholland1024/pulse-manager-tutorial/blob/main/assets/air-pump/inflatable_pockets_negative1.SLDPRT)
+[negative1.stl](https://github.com/benholland1024/pulse-manager-tutorial/blob/main/assets/air-pump/inflatable_pockets_negative1.STL)
+[negative2.sldprt](https://github.com/benholland1024/pulse-manager-tutorial/blob/main/assets/air-pump/inflatable_pockets_negative2.SLDPRT)
+[negative2.stl](https://github.com/benholland1024/pulse-manager-tutorial/blob/main/assets/air-pump/inflatable_pockets_negative2.STL)
+    - The [assembly file](https://github.com/benholland1024/pulse-manager-tutorial/blob/main/assets/air-pump/mould_maker.SLDASM) is also available if you're curious.
+ 5. **NOTE:** I forgot to add some small air holes in these molds! You should edit these parts to do that, so the vacuum former will work better. I added these holes with a drill afterwards, which cracked the molds and required using resin to fix.
+   
+Print the two negative mold STLs using <a href="https://www.amazon.com/dp/B08GJTGPYQ">Siraya Tech high-temp resin</a>. This resin is hard to print with -- if you're printing at room temperature, print with 90 seconds per bottom layer, 6 bottom layers, and 18 seconds per regular layer. 
+
+Once you have the two negative molds, get the 80A polyethylene film from <a href="https://www.americanpolyfilm.com/polyether-tpu-film">American Polyfilm</a> and cut squares that are the right size for the <a href="https://www.amazon.com/dp/B0067FFW6E">dental vacuum former</a>.  Place the first mold in the former, load the film (I used 2 sheets at once), heat it for ~2 minutes, then switch to the vacuum to create the shape of half a pocket. **NOTE**: This is where the holes in the molds matter. Carefully extract the pocket half, removing the ball bearings. Repeat that procedure with the other negative mold.
+
+You should now have two halves of a pocket. Put these halves back in the molds and push them together. Cut off any excess film -- this film will melt if it touches the heat press, causing toxic fumes and a mess of melted plastic. Place the two molds into the <a href="https://www.amazon.com/dp/B075L6K1KM">heat press</a> and heat it to 160 degrees C. Sandwich the heat press, and leave it there for 15 minutes or so before turning the heat press off. Once cool, take out the pocket, and check whether it's airtight. 
+
+Finally, cut a length of 1/8" I.D. tubing (5-10cm). Cut a hole in the convex side of the pocket and insert the tube, ensuring it's positioned correctly to fit in the heart structure casing. Glue the tube in place -- I first used <a href="https://www.amazon.com/dp/">PVC adhesive</a>, and once dry, painted some of the <a href="https://www.amazon.com/dp/B08RWMMVCH">Superflex 80A printing resin</a> onto the pockets and cured them. I'm not sure if the PVC adhesive is necessary.
+
+Blow into the tubing to check if the pockets are airtight. Getting these airtight was hard and seemed to require a bit of luck, and several rounds of the Superflex resin.
+
+Create 4 pockets this way. The same 2 negative mold halves can be reused, of course. 
+
+The final product is pictured below, placed in the heart structure casing.
+
+<img src="https://github.com/benholland1024/pulse-manager-tutorial/blob/main/assets/air-pump/images/pockets.jpg?raw=true" width="150px" />
 
 <br/>
 
