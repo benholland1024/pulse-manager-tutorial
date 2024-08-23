@@ -1,4 +1,4 @@
-![case_plans](https://github.com/user-attachments/assets/8d5082c3-df8b-4ef0-af05-12f54c1fec37)<h1 align="center"> 🫀 Pulse Manager Tutorial</h1>
+<h1 align="center"> 🫀 Pulse Manager Tutorial</h1>
 
 <h4 align="center">A description of how to recreate the hardware needed to use the <a href="https://github.com/benholland1024/pulse-manager">pulse-manager</a> software.</h4>
 
