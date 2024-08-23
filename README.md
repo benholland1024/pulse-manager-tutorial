@@ -1,4 +1,4 @@
-<h1 align="center"> 🫀 Pulse Manager Tutorial</h1>
+![case_plans](https://github.com/user-attachments/assets/8d5082c3-df8b-4ef0-af05-12f54c1fec37)<h1 align="center"> 🫀 Pulse Manager Tutorial</h1>
 
 <h4 align="center">A description of how to recreate the hardware needed to use the <a href="https://github.com/benholland1024/pulse-manager">pulse-manager</a> software.</h4>
 
@@ -45,8 +45,9 @@ The following supplies were used:
  - Electronics: 
    - An <a href="https://www.amazon.com/dp/B07PBF6DX5/">Endoscopic camera</a>
    - A <a href="https://www.amazon.com/dp/B0899VXM8F">Raspberry Pi</a> and its <a href="https://www.amazon.com/dp/B07TYQRXTK"> power supply</a>
+   - A [microusb to HDMI socket](https://www.amazon.com/dp/B09LYPXPH6) converter, if using HDMI and a RPI 4 or 5
    - A <a href="https://www.raspberrypi.com/products/raspberry-pi-touch-display/">touchscreen for the RPi</a>
-     - _Or, a keyboard mouse and screen, if preferred_
+     - _Or, a keyboard mouse and screen, if preferred._
    - An <a href="https://www.amazon.com/dp/B00NAY3RB2">analog to digital converter</a> circuit component
    - Three <a href="https://www.digikey.com/en/products/detail/sensata-crydom/CMX60D10/221843">Crydom</a> relays (CMX60D10)
    - Three <a href="https://www.mcmaster.com/2555N12/">solenoid valves</a> (Clippard, EV-P-10-25-A0-v)
@@ -255,15 +256,33 @@ The final product is pictured below, placed in the heart structure casing.
 
 <h3 id="air-source"> 3.2. Attach tubing to valves and air source</h3>
 
+The picture below shows the set up for the air tubing. _(This picture shows an earlier version of the heart structure casing -- ignore that.)_ 
+
+<img src="https://github.com/benholland1024/pulse-manager-tutorial/blob/main/assets/air-pump/images/airflow.jpg?raw=true" width="150px" />
+
+Note that the black tubing shown in the bottom attaches to a source of compressed air. 
+
+Also note that two of the air valves release the air to the atmosphere. This prevents pressure build up, which can disconnect the tubing. 
+
 <br/><hr/><br/>
 
 <h2 id="rpi">4. The Raspberry Pi controller</h2>
 
 <h3 id="rpi-case"> 4.1. Print case for RPi screen</h3>
 
+In retrospect, I'm not sure if the <a href="https://www.raspberrypi.com/products/raspberry-pi-touch-display/">touchscreen</a> was the best choice. It could be replaced with a monitor, keyboard and mouse for easier control and a larger screen - although it would then take up more space. 
+
+If you're using the touch screen, you should print a display case. I found basic models [here](https://www.printables.com/model/18153-raspberry-pi-7-inch-touchscreen-display-case/files), and also used [this deep version](https://www.printables.com/model/151799-raspberry-pi-deep-7-inch-touchscreen-display-case) of the case. 
+
+Ultimately, I plan to create a custom case based on the ones above, that can accomodate the added sensors.  My plan is shown in the image below.
+
+<img src="https://github.com/benholland1024/pulse-manager-tutorial/blob/main/assets/rpi/images/case_plans.jpg?raw=true" width="150px" />
+
 <br/>
 
 <h3 id="rpi-setup"> 4.2. Set up RPi with a keyboard and mouse</h3>
+
+
 
 <br/>
 
