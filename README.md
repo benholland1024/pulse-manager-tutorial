@@ -27,8 +27,8 @@
 <h2 id="supplies">1. Required tools and supplies</h2>
 
 The following tools were used:
- - An <a href="https://store.anycubic.com/products/photon-mono-m5s?srsltid=AfmBOoo6R4wCbVnCGKRZ7tQgiQt0xwVnhSDFUFg9_NGr83IOjvOBaMKt">Anycubic Photon Mono M5s</a> 3d printer, and the slicer software
- - The <a href="https://www.solidworks.com/">SolidWorks software</a>, provided by the University of Akron, running on a Windows computer
+ - An [Anycubic Photon Mono M5s](https://store.anycubic.com/products/photon-mono-m5s?srsltid=AfmBOoo6R4wCbVnCGKRZ7tQgiQt0xwVnhSDFUFg9_NGr83IOjvOBaMKt) 3d printer, and the slicer software
+ - The [SolidWorks software](https://www.solidworks.com/), provided by the University of Akron, running on a Windows computer
  - A <a href="https://www.amazon.com/dp/B0067FFW6E">dental vacuum former</a>
  - A <a href="https://www.amazon.com/dp/B075L6K1KM">heat press</a>
  - A <a href="https://www.amazon.com/dp/B07RZV2DW8">soldering iron</a>
@@ -82,6 +82,8 @@ The following supplies were used:
    - A disposable mixing dish and disposible brush (or popsicle stick) to apply the adhesive.
    - A <a href="https://www.mcmaster.com/3999T7/">clear jar</a> for the compliance chamber
    - Some <a href="https://www.amazon.com/dp/B0BXWJDBNS/">220 grit sandpaper</a>
+ - Misc:
+   - Zip ties, to seal the heart structure casing
 
 While testing the system, the following was used:
  - Bread boards
@@ -193,23 +195,49 @@ The tubing assembly requirements:
  - The entire cardiovascular loop must be watertight.
  - The tension from the tubing must not damage the heart structure!
 
+The appropriate places for the valves and sensors can be seen on the diagram below, from [this paper by Rodriguez](https://www.semanticscholar.org/paper/Redesign-and-performance-evaluation-of-a-cardiac-Rodriguez/98711b67d424e339e281634dccae912807a91a78).
+
+<img src="https://github.com/benholland1024/pulse-manager-tutorial/blob/main/assets/cardiovascular-model/images/Rodriguez_pulseDuplicatorDiagram.png?raw=true" width="150px" />
+
+The complete set up uses 1" I.D. tubing, 90 degree connectors, T connectors, 3d printed reducer connectors, smaller tubing, the pressure sensors, and the flow rate sensor. A picture of the set up is shown below. 
+
+<img src="https://github.com/benholland1024/pulse-manager-tutorial/blob/main/assets/cardiovascular-model/images/PulseDuplicatorSetup.jpg?raw=true" width="150px" />
+
 <br/><hr/><br/>
 
-<h2 id="air-pump">2. The air pump</h2>
+<h2 id="air-pump">3. The air pump</h2>
 
+<h3 id="inflatable-pockets"> 3.1. Create inflatable pockets</h3>
+
+<br/>
+
+<h3 id="air-source"> 3.2. Attach tubing to valves and air source</h3>
 
 <br/><hr/><br/>
 
 <h2 id="rpi">4. The Raspberry Pi controller</h2>
 
+<h3 id="rpi-case"> 4.1. Print case for RPi screen</h3>
+
+<br/>
+
+<h3 id="rpi-setup"> 4.2. Set up RPi with a keyboard and mouse</h3>
+
+<br/>
+
+
+<h3 id="circuitry"> 4.3. Circuitry</h3>
+
+<br/>
+
+<h3 id="software"> 4.4. Set up the pulse-manager software</h3>
+
 <br/><hr/><br/>
 
-<h2 id="testing">2. Testing</h2>
+<h2 id="testing">5. Testing</h2>
 
 
 <br/><br/><br/><br/>
-
-
 
 
 
