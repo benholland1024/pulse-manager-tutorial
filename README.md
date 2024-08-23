@@ -18,8 +18,8 @@
  4. [**The Raspberry Pi controller**](#rpi)
     - 4.1. Print case for RPi screen
     - 4.2. Set up RPi with a keyboard and mouse
-    - 4.3. Circuitry
-    - 4.4. Set up the pulse-manager software
+    - 4.3. Set up the pulse-manager software
+    - 4.4. Circuitry
  5. [**Testing**](#testing)
 
 <br/><hr/><br/>
@@ -43,9 +43,12 @@ The following supplies were used:
    - <a href="https://www.amazon.com/dp/B08GJTGPYQ">Siraya Tech high-temp resin</a>
    - Isopropyl alcohol to clean the prints.
  - Electronics: 
-   - An <a href="https://www.amazon.com/dp/B07PBF6DX5/">Endoscopic camera</a>
+   - An <a href="https://www.amazon.com/dp/B07PBF6DX5/">Endoscopic camera</a> (optional)
+   - USB-c converter for RPi for camera (optional)
    - A <a href="https://www.amazon.com/dp/B0899VXM8F">Raspberry Pi</a> and its <a href="https://www.amazon.com/dp/B07TYQRXTK"> power supply</a>
    - A [microusb to HDMI socket](https://www.amazon.com/dp/B09LYPXPH6) converter, if using HDMI and a RPI 4 or 5
+   - A [microsd card](https://www.amazon.com/dp/B0B7NXBM6P) for RPi memory.
+   - A <a href="https://www.amazon.com/dp/B00GFAN498">Wifi USB dongle</a>for the Raspberry Pi (or ethernet)
    - A <a href="https://www.raspberrypi.com/products/raspberry-pi-touch-display/">touchscreen for the RPi</a>
      - _Or, a keyboard mouse and screen, if preferred._
    - An <a href="https://www.amazon.com/dp/B00NAY3RB2">analog to digital converter</a> circuit component
@@ -55,8 +58,7 @@ The following supplies were used:
    - Three <a href="https://www.digikey.com/en/products/detail/nxp-usa-inc./MPVZ5004GW7U/1168374">pressure sensors (MPVZ5004GW7U)</a>
    - A custom PCB from JCLPCB
    - A <a href="https://www.amazon.com/dp/B0852HX9HV/">12 volt power supply and its wire adapter</a>
-   - A <a href="https://www.amazon.com/dp/B00GFAN498">Wifi USB dongle</a>for the Raspberry Pi
-   - USB-c converter for RPi for camera (maybe not necessary?)
+
    - Some <a href="https://www.amazon.com/dp/B01N0VNNKO">solder</a>
  - Tubing:
    - 10 ft of <a href="https://www.mcmaster.com/5233K72/">1 inch I.D. PVC tubing</a>
@@ -282,16 +284,63 @@ Ultimately, I plan to create a custom case based on the ones above, that can acc
 
 <h3 id="rpi-setup"> 4.2. Set up RPi with a keyboard and mouse</h3>
 
+Get the microsd card and plug it into a computer (not the RPi, yet). [Install the Raspberry Pi OS](https://projects.raspberrypi.org/en/projects/raspberry-pi-setting-up/2) onto the SD card. 
 
+Now plug the SD card into the RPi. Plug the RPi into power. Follow the instructions to plug in the touchscreen, and/or use HDMI to display the RPi on a screen, and connect a mouse and keyboard. 
+
+The computer should boot up! If you're using the touchscreen, the screen is likely upside down compared to what you want -- click the RPi menu icon, then "Preferences → Screen Configuration". Right click the touch screen and click "Orientation → Inverted", then click "apply" and "ok". 
+
+Next I like to go to "Preferences → Appearance Settings", then the "Taskbar" tab, and make the position on the bottom. You can set the taskbar "location" here too, if using two screens. Then in the System tab, I set the theme to dark. 
+
+The keyboard may need configured to US instead of British (or else you may get a £ when you want a $, among other issues.) Open a command line and type `sudo raspi-config`.  In "localisation options", update both the keyboard and timezone. This info came from [here](https://forums.raspberrypi.com/viewtopic.php?t=69752). The displayed clock still might not work, which is acceptable to me. 
+
+You'll need to connect to wifi, using the wifi usb dongle (or ethernet). If you're a U of Akron student, there's a guide to connecting to Eduroam on Linux [here](https://www.uakron.edu/it/connecting-to-the-network.dot). 
 
 <br/>
 
+<h3 id="software"> 4.3. Set up the pulse-manager software</h3>
 
-<h3 id="circuitry"> 4.3. Circuitry</h3>
+Now we can install the software. Open up a command line. You'll need the `git` command, which should be installed. Enter `git -v` to make sure you don't get an error. Install the [pulse-manager repo](https://github.com/benholland1024/pulse-manager) wherever you'd like.  These commands are what I use:
+
+```bash
+mkdir github
+cd github/
+git clone https://github.com/benholland1024/pulse-manager.git
+cd pulse-manager/
+```
+
+The software uses Python, so make sure you have that installed by running `python -version` and ensuring there's no error.  
+Python needs some packages installed. Install them by running: 
+
+```bash
+sudo pip install -r requirements.txt --break-system-packages
+```
+
+To edit the software, open the main menu, then click "Programming → Geany". On the top menu bar, click "Project → New...". Enter the following, replacing "benholland" with your username:
+
+| Prompt     | What to write                          |
+|------------|----------------------------------------|
+| Name:      | pulse-manager                          |
+| Filename:  | /home/benholland/pulse-manager         |
+| Base path: | /home/benholland/github/pulse-manager/ |
+
+Click "create". Now click "Tools → Plugin Manager", check "File Browser", and click "close". Now at the top of the panel on the left, click the right arrow button until the word "Files" is highlighted -- you should see all the files in the project! 
+
+Click "Document → Indent Type → Spaces" and "Document → Indent Width → 2". 
+
+_(I know this set up is a pain but you only have to do it once, and Geany is pretty good otherwise.)_
+
+In the bottom panel of Geany, click the down arrow until it says "terminal".  Type "pwd" to make sure you're in the `pulse-duplicator` project folder. (Navigate there using `cd` if not). 
+
+Now, you should be able to run the app using:
+
+```bash
+python app.py
+```
 
 <br/>
 
-<h3 id="software"> 4.4. Set up the pulse-manager software</h3>
+<h3 id="circuitry"> 4.4. Circuitry</h3>
 
 <br/><hr/><br/>
 
