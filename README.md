@@ -351,6 +351,26 @@ If the window opens but says "Error: 404", open `app.py` and ensure the line whi
 
 <br/>
 
+With the app working, you can make a shortcut to open the app. Create a new file.
+
+```bash
+nano ~/Desktop/pulse-manager.sh
+```
+
+Now add this text:
+```bash
+#!/bin/bash
+/home/benholland/github/pulse-manager/app.py
+```
+
+Save the file (ctrl-x, "y"). Now make it executable:
+
+```bash
+chmod +x pulse-manager.sh
+```
+
+<br/>
+
 <h3 id="circuitry"> 4.4. Circuitry</h3>
 
 <br/><hr/><br/>
