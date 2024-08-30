@@ -294,6 +294,8 @@ Next I like to go to "Preferences → Appearance Settings", then the "Taskbar" t
 
 The keyboard may need configured to US instead of British (or else you may get a £ when you want a $, among other issues.) Open a command line and type `sudo raspi-config`.  In "localisation options", update both the keyboard and timezone. This info came from [here](https://forums.raspberrypi.com/viewtopic.php?t=69752). The displayed clock still might not work, which is acceptable to me. 
 
+You must enable SPI as well. Enter `sudo raspi-config`, go to "Interface Options", "SPI", then hit "Yes" to enable.
+
 You'll need to connect to wifi, using the wifi usb dongle (or ethernet). If you're a U of Akron student, there's a guide to connecting to Eduroam on Linux [here](https://www.uakron.edu/it/connecting-to-the-network.dot). 
 
 <br/>
