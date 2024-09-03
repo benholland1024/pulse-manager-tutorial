@@ -369,9 +369,26 @@ Save the file (ctrl-x, "y"). Now make it executable:
 chmod +x pulse-manager.sh
 ```
 
+Now you can double click this file to start the app!
+
 <br/>
 
 <h3 id="circuitry"> 4.4. Circuitry</h3>
+
+The RPi needs to have its pins attached correctly to the sensors and solenoid valves. 
+
+I first did this using breadboards and pin connectors. I recommend using these tools if any modifications are being made.
+
+Once the breadboard system was working, I used the free software [KiCad](https://www.kicad.org/) to create a circuit schematic -- see the first image below.  Then a PCB design was created from that schematic, see the second picture.  
+
+<img src="https://github.com/benholland1024/pulse-manager-tutorial/blob/main/assets/rpi/images/pulse_dup_schematic.png?raw=true" width="150px" />
+<img src="https://github.com/benholland1024/pulse-manager-tutorial/blob/main/assets/rpi/images/pulse_dup_pcb.png?raw=true" width="150px" />
+
+The files for these schematics are available [here](https://github.com/benholland1024/pulse-manager-tutorial/blob/main/assets/rpi/pulse_duplicator_circuit_files.zip).  Download that zip file and extract it.  The files should open in KiCad.
+
+You'll need to order the PCB. I used the company [JLCPCB](https://jlcpcb.com/). In that zip file, there's another zip file called "gerber.zip".  You can upload that to the JLCPCB website to order the pcb.  
+
+Or, if you change the PCB, follow [this](https://jlcpcb.com/help/article/how-to-generate-gerber-and-drill-files-in-kicad-7) to create a new gerber zip file, to be ordered.
 
 <br/><hr/><br/>
 
