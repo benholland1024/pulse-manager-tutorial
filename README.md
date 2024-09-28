@@ -4,6 +4,8 @@
 
 <br/><hr/><br/>
 
+<img src="https://github.com/benholland1024/pulse-manager-tutorial/blob/main/assets/overview_diagram.png?raw=true" />
+
 <h2>Contents</h2>
 
  1. <a href="#supplies">**Required tools and supplies**</a>
