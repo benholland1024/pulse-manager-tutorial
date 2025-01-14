@@ -23,6 +23,7 @@
     - 4.3. Set up the pulse-manager software
     - 4.4. Circuitry
  5. [**Testing**](#testing)
+    - 5.1. Testing the screen interface
 
 <br/><hr/><br/>
 
@@ -395,6 +396,12 @@ Or, if you change the PCB, follow [this](https://jlcpcb.com/help/article/how-to-
 <br/><hr/><br/>
 
 <h2 id="testing">5. Testing</h2>
+
+<br/> 
+
+<h3 id="test-the-screen"> 5.1. Testing the screen interface</h3>
+
+
 
 
 <br/><br/><br/><br/>
